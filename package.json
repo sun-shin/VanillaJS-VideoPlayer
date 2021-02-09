@@ -1,0 +1,24 @@
+{
+  "name": "vanillajs-videoplayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sun-shin/VanillaJS-VideoPlayer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sun-shin/VanillaJS-VideoPlayer/issues"
+  },
+  "homepage": "https://github.com/sun-shin/VanillaJS-VideoPlayer#readme"
+}
