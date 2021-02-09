@@ -9,7 +9,8 @@
   <div class="words">
   </div>
    <div class="player">
-     <video class="player__video viewer" src="652333414.mp4"></video>
+     <video class="viewer" src="652333414.mp4"></video>
+     <canvas class="player__video filterer"></canvas>
 
      <div class="player__controls">
        <div class="progress">
@@ -21,9 +22,18 @@
        <button data-skip="-10" class="player__button">« 10s</button>
        <button data-skip="25" class="player__button">25s »</button>
      </div>
+
    </div>
 
-  <script src="scripts.js"></script>
-  <script src="speech.js"></script>
+   <div class= "filter_controls">
+    <button class="filter_button" title="Red Filter" onclick="redFilter()">Red Filter</button>
+    <button class="filter_button" title="Blue Filter" onclick="blueFilter()">Blue Filter</button>
+    <button class="filter_button" title="Green Filter" onclick="greenFilter()">Green Filter</button>
+    <button class="filter_button" title="Reset" onclick="resetFilter()">Reset</button>
+   </div>
+
+  <script src="javascript/scripts.js"></script>
+  <script src=javascript/filter_scripts.js></script>
+  <script src="javascript/speech.js"></script>
 </body>
 </html>
