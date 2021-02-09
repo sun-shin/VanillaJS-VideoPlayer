@@ -168,7 +168,8 @@ input[type="range"]::-moz-range-thumb {
   /* position: relative;
   z-index: 1; */
 }
-.filterer {
-  /* position: relative;
-  z-index: 2; */
-}
+
+/* .filterer {
+  position: relative;
+  z-index: 2;
+} */

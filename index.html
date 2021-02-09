@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <div class="words">
+  </div>
    <div class="player">
      <video class="viewer" src="652333414.mp4"></video>
      <canvas class="player__video filterer"></canvas>
@@ -25,10 +26,14 @@
    </div>
 
    <div class= "filter_controls">
-    <button class="red_filter_button" title="Red Filter">►</button>
+    <button class="filter_button" title="Red Filter" onclick="redFilter()">Red Filter</button>
+    <button class="filter_button" title="Blue Filter" onclick="blueFilter()">Blue Filter</button>
+    <button class="filter_button" title="Green Filter" onclick="greenFilter()">Green Filter</button>
+    <button class="filter_button" title="Reset" onclick="resetFilter()">Reset</button>
    </div>
 
-  <script src="scripts.js"></script>
-  <script src="filter_scripts.js"></script>
+  <script src="javascript/scripts.js"></script>
+  <script src=javascript/filter_scripts.js></script>
+  <script src="javascript/speech.js"></script>
 </body>
 </html>
