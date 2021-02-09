@@ -9,29 +9,27 @@ const words = document.querySelector(".words");
 words.appendChild(p);
 
 recognition.addEventListener("result", (e) => {
-  console.log(e.results);
   const transcript = Array.from(e.results)
     .map((result) => result[0])
     .map((result) => result.transcript)
     .join("");
 
   if (e.results[0].isFinal) {
-    p = document.createElement("p");
-    words.appendChild(p);
+    if (transcript.includes("play")) {
+      togglePlay();
+      console.log("starting video...");
+    } else if (transcript.includes("pause")) {
+      togglePlay();
+      console.log("pausing video...");
+    } else if (transcript.includes("back")) {
+      video.currentTime += -15;
+      console.log("going back 15 seconds");
+    } else if (transcript.includes("forward")) {
+      video.currentTime += 15;
+      console.log("going forward 15 seconds");
+    }
   }
-  if (transcript.includes("play")) {
-    console.log("starting video...");
-  }
-  if (transcript.includes("pause")) {
-    console.log("pausing video...");
-  }
-  if (transcript.includes("back")) {
-    console.log("going back 15 seconds");
-  }
-  if (transcript.includes("forward")) {
-    console.log("going forward 15 seconds");
-  }
-  console.log(transcript);
+  // console.log(transcript);
 });
 
 recognition.addEventListener("end", recognition.start);
