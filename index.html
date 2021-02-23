@@ -6,10 +6,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form action="" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
+    
+      <p>
+        <label for="upload_preset">Preset: <input type="text" name="upload_preset" value="vf_upload"></label>
+      </p>
+      <p>
+        <label >Select your video:
+        <input type="file" name="file"></label>
+      </p>
+      
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+      <img id="uploaded">
+      <!-- <div id="results"></div> -->
+    
+  </form>
   <div class="words">
   </div>
    <div class="player">
-     <video class="viewer" src="652333414.mp4"></video>
+     <video crossorigin=”anonymous” class="viewer" src="https://res.cloudinary.com/<CLOUDN_NAME>/video/upload/v1613439493/unsigned/sea-turtle_fxpvqz.mp4"></video>
      <canvas class="player__video filterer"></canvas>
 
      <div class="player__controls">
@@ -35,5 +52,6 @@
   <script src="javascript/scripts.js"></script>
   <script src=javascript/filter_scripts.js></script>
   <script src="javascript/speech.js"></script>
+  <script src="javascript/file_upload.js"></script>
 </body>
 </html>

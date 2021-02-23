@@ -173,3 +173,8 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   z-index: 2;
 } */
+
+label[for="upload_preset"]
+{
+    display: none;
+}
