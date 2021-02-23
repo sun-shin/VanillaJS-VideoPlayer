@@ -27,6 +27,10 @@ recognition.addEventListener("result", (e) => {
     } else if (transcript.includes("forward")) {
       video.currentTime += 15;
       console.log("going forward 15 seconds");
+    } else if (transcript.includes("increase volume")) {
+      video["volume"] += 0.1;
+
+      console.log("increasing volume...");
     }
   }
   // console.log(transcript);
