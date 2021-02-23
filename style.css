@@ -173,3 +173,9 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   z-index: 2;
 } */
+
+/* hide upload preset box */
+label[for="upload_preset"]
+{
+    display: none;
+}
