@@ -9,8 +9,6 @@ const jwt = require("jsonwebtoken");
 const { pool } = require("./config");
 const port = process.env.PORT || 3000;
 
-const db = require("./queries");
-
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
