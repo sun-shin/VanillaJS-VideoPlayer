@@ -6,10 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="upload_widget" class="cloudinary-button">Upload Files</button>
+  <h1>Vanilla Javascript Video Player</h1>
+  <div class="upload_button">
+    <button id="upload_widget" class="cloudinary-button">Upload Files</button>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+  </div>
 
-  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
-    
   <div class="words">
   </div>
   <div class="player">
@@ -34,7 +36,19 @@
     <button class="filter_button" title="Blue Filter" onclick="blueFilter()">Blue Filter</button>
     <button class="filter_button" title="Green Filter" onclick="greenFilter()">Green Filter</button>
     <button class="filter_button" title="Reset" onclick="resetFilter()">Reset</button>
-  </div>
+  </div><br>
+
+  <div class="voice_note">
+    <h2>Voice Commands</h2>
+    <li>Play/Pause</li>
+    <li>Skip Forward/Back</li><br>
+  </div><br>
+
+  <footer>
+    <h3>Github Repository 
+      <a href>https://github.com/sun-shin/VanillaJS-VideoPlayer</a>
+    </h3>
+  </footer>
 
   <script src="javascript/scripts.js"></script>
   <script src=javascript/filter_scripts.js></script>

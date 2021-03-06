@@ -9,15 +9,31 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 750px;
+  margin: auto;
   padding: 0;
-  display: flex;
+  /* display: flex; */
   background: #7a419b;
   min-height: 100vh;
-  background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+  background: linear-gradient(135deg, #13547a 0%, #2f82c1 48%, #80d0c7 100%);
   background-size: cover;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+}
+
+.upload_button {
+  text-align: center;
+}
+
+.cloudinary-button {
+  border-radius: 50px;
 }
 
 .player {
@@ -106,6 +122,36 @@ body {
   flex-basis: 50%;
 }
 
+.filter_controls {
+  width: 74%;
+  margin: 0 auto;
+}
+
+.filter_button {
+  /* border: 1px solid black; */
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 40px 0 0 0;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.voice_note {
+  text-align: center;
+  border-style: solid;
+  border-color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+li {
+  font-size: 20px;
+  color: #fff;
+}
+
 /* unholy css to style input type="range" */
 
 input[type="range"] {
@@ -175,7 +221,6 @@ input[type="range"]::-moz-range-thumb {
 } */
 
 /* hide upload preset box */
-label[for="upload_preset"]
-{
-    display: none;
+label[for="upload_preset"] {
+  display: none;
 }
